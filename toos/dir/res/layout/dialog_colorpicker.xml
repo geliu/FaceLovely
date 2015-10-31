@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dialogcolorpicker_linearlayout_title" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/dialog_pickcolor_text_color" android:gravity="center" android:id="@id/textview_history_title" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/dialog_colorpicker_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dialogcolorpicker_linearlayout_myview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@id/dialogcolorpicker_linearlayout_btns" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@color/dialog_pickcolor_text_color" android:gravity="center" android:id="@id/dialogcolorpicker_btn_cancel" android:background="@*android:color/transparent" android:layout_width="60.0dip" android:layout_height="40.0dip" android:text="@string/dialog_colorpicker_cancel" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@color/dialog_pickcolor_text_color" android:gravity="center" android:id="@id/dialogcolorpicker_btn_ok" android:background="@*android:color/transparent" android:layout_width="60.0dip" android:layout_height="40.0dip" android:text="@string/dialog_colorpicker_ok" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

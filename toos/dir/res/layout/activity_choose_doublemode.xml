@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relativelayout_dmode_title" android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:id="@id/relativelayout_dmode_btngetback" android:background="#fff9f8f9" android:layout_width="80.0dip" android:layout_height="48.0dip" android:layout_alignParentLeft="true">
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@drawable/bt_font_style" android:gravity="right|center" android:id="@id/btnBackIndex" android:background="@drawable/bt_getback2_style" android:layout_width="62.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:text="@string/btn_activity_back" android:layout_alignParentLeft="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/textview_dmode_title" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/title_doublemode" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="48.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearlayout_show_btns" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center" android:id="@id/relativelayout_dmode_0" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_weight="1.0">
+                <Button android:id="@id/btnDMode0" android:background="@drawable/bt_dmode0_style" android:layout_width="226.0dip" android:layout_height="114.0dip" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/relativelayout_dmode_1" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_weight="1.0" android:layout_below="@id/relativelayout_dmode_0">
+                <Button android:id="@id/btnDMode1" android:background="@drawable/bt_dmode1_style" android:layout_width="226.0dip" android:layout_height="114.0dip" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/relativelayout_dmode_2" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_weight="1.0" android:layout_below="@id/relativelayout_dmode_1">
+                <Button android:id="@id/btnDMode2" android:background="@drawable/bt_dmode2_style" android:layout_width="226.0dip" android:layout_height="114.0dip" android:contentDescription="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
