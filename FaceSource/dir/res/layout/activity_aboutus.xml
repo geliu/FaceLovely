@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relativelayout_aboutus_title" android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:id="@id/relativelayout_aboutus_btngetback" android:background="#fff9f8f9" android:layout_width="80.0dip" android:layout_height="48.0dip" android:layout_alignParentLeft="true">
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@drawable/bt_font_style" android:gravity="right|center" android:id="@id/btnGetBack" android:background="@drawable/bt_getback2_style" android:layout_width="62.0dip" android:layout_height="40.0dip" android:text="@string/btn_activity_back" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/textview_aboutus_title" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/title_aboutus" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/relativelayout_aboutus_main" android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="48.0dip">
+        <RelativeLayout android:id="@id/relativelayout_members" android:layout_width="fill_parent" android:layout_height="460.0dip">
+            <RelativeLayout android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/textview_members" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:text="@string/text_aboutus_members" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="440.0dip" android:layout_marginTop="20.0dip">
+                <GridView android:gravity="center" android:id="@id/gridview_members" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:horizontalSpacing="5.0dip" android:verticalSpacing="20.0dip" android:stretchMode="columnWidth" android:columnWidth="105.0dip" android:numColumns="3" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_below="@id/relativelayout_members">
+            <RelativeLayout android:id="@id/relativelayout_textcontactus" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/textview_contactus" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:text="@string/text_aboutus_contactus" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:gravity="left" android:id="@id/textview_mail" android:layout_width="200.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:text="@string/text_aboutus_mail" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

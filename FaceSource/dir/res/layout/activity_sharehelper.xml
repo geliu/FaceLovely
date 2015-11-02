@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/relativelayout_share_dialog" android:background="@drawable/bg_shareapp_dialog_3" android:clickable="true" android:layout_width="270.0dip" android:layout_height="320.0dip">
+        <RelativeLayout android:id="@id/relativelayout_share_dialog_title" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <RelativeLayout android:id="@id/relativelayout_share_close" android:layout_width="70.0dip" android:layout_height="35.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <Button android:textSize="@dimen/title_text_size" android:textColor="@drawable/bt_font_style" android:id="@id/button_share_close" android:background="@*android:color/transparent" android:layout_width="50.0dip" android:layout_height="35.0dip" android:text="@string/btn_share_close" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/title_text_color" android:gravity="center" android:layout_width="120.0dip" android:layout_height="35.0dip" android:text="@string/title_share" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/linearlayout_share_dialog_line" android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/relativelayout_play_bottom_share" android:layout_width="fill_parent" android:layout_height="285.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="270.0dip" android:layout_height="75.0dip" android:layout_marginTop="15.0dip">
+                <RelativeLayout android:id="@id/share_item1" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_qqtouxiang" android:background="@drawable/share_bt_qqtouxiang" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_qqavatar" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/share_item2" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_qzone" android:background="@drawable/share_bt_qzone" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_qzone" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/share_item3" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_qqhaoyou" android:background="@drawable/share_bt_qqhaoyou" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_qq" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="270.0dip" android:layout_height="75.0dip" android:layout_marginTop="15.0dip">
+                <RelativeLayout android:id="@id/share_item4" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_weixin" android:background="@drawable/share_bt_weixin" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_weixin" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/share_item5" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_pengyouquan" android:background="@drawable/share_bt_pyq" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_pengyouquan" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/share_item6" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_sinaweibo" android:background="@drawable/share_bt_sinaweibo" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_sinaweibo" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="270.0dip" android:layout_height="75.0dip" android:layout_marginTop="15.0dip">
+                <RelativeLayout android:id="@id/share_item7" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_facebook" android:background="@drawable/share_bt_facebook" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_facebook" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/share_item8" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_twitter" android:background="@drawable/share_bt_twitter" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_twitter" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/share_item9" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:layout_gravity="center_horizontal" android:id="@id/button_share_instagram" android:background="@drawable/share_bt_instagram" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="75.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_instagram" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="270.0dip" android:layout_height="75.0dip" android:layout_marginTop="15.0dip">
+                <RelativeLayout android:id="@id/share_item10" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:layout_gravity="center_horizontal" android:id="@id/button_share_whatsapp" android:background="@drawable/share_bt_whatsapp" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="75.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_whatsapp" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/share_item11" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_line" android:background="@drawable/share_bt_line" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_line" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/share_item12" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:id="@id/button_share_tumblr" android:background="@drawable/share_bt_tumblr" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="55.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_tumblr" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/share_item13" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="75.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_centerInParent="true">
+                        <Button android:layout_gravity="center_horizontal" android:id="@id/button_share_kakaotalk" android:background="@drawable/share_bt_kakaotalk" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                        <TextView android:textSize="@dimen/share_items_text_size" android:textColor="@color/share_items_text_color" android:gravity="center" android:layout_width="75.0dip" android:layout_height="20.0dip" android:text="@string/btn_share_kakaotalk" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/relativelayout_share_dialog_sending" android:background="@drawable/bg_loadbackgroup" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_centerInParent="true">
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/textview_msg" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:text="@string/text_share_sending" />
+            <RelativeLayout android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/textview_msg">
+                <ImageView android:id="@id/imageview_load" android:background="@drawable/pic_loadrefresh" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

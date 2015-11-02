@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: myoteelianmeng.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '11'
+  targetSdkVersion: '17'
+packageInfo:
+  cur_package: com.miantan.myoface
+  orig_package: com.miantan.myoface
+compressionType: false

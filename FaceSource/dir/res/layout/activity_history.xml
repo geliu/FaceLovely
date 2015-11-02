@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relativelayout_history_title" android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:id="@id/relativelayout_history_btngetback" android:background="#fff9f8f9" android:layout_width="80.0dip" android:layout_height="48.0dip" android:layout_alignParentLeft="true">
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@drawable/bt_font_style" android:gravity="right|center" android:id="@id/btnGetBack" android:background="@drawable/bt_getback2_style" android:layout_width="62.0dip" android:layout_height="40.0dip" android:text="@string/btn_activity_back" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/textview_history_title" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/title_history" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/relativelayout_history_main" android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="48.0dip">
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layerType="software" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relativelayout_myoface_loading" android:background="@color/app_start_bg_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="500.0dip">
+            <RelativeLayout android:layout_width="120.0dip" android:layout_height="120.0dip">
+                <ImageView android:id="@id/imageview_myoface_loading" android:background="@drawable/pic_loading_boy" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+                <TextView android:textSize="@dimen/activity_loading_text_size" android:textColor="@color/activity_loading_text_color" android:gravity="center" android:layout_width="120.0dip" android:layout_height="30.0dip" android:text="@string/text_activity_loading" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

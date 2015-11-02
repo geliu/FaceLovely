@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relativelayout_feedback_title" android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:id="@id/relativelayout_feedback_btngetback" android:layout_width="80.0dip" android:layout_height="48.0dip" android:layout_alignParentLeft="true">
+            <Button android:id="@id/btnGetBack" android:background="@drawable/bt_getback2_style" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <ImageView android:id="@id/imageview_feedback_title" android:background="@drawable/pic_feedback_title" android:layout_width="66.0dip" android:layout_height="15.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/linearlayout_feedback_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/relativelayout_feedback_title">
+        <ScrollView android:id="@id/scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageview_feedback_show" android:layout_width="330.0dip" android:layout_height="210.0dip" android:src="@drawable/imageview_feedback_show" />
+                <Button android:id="@id/btn_feedback_select" android:background="@drawable/btn_feedback_select_style" android:layout_width="330.0dip" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" />
+                <EditText android:textColorHint="#ffb2b2b2" android:id="@id/edittext_feedback_text" android:layout_width="334.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="输入描述（例：我想要图片里的发型）" android:singleLine="true" android:imeOptions="actionDone" />
+                <Button android:id="@id/btn_feedback_upload" android:background="@drawable/btn_feedback_upload_style" android:layout_width="330.0dip" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="400.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/relativelayout_share_dialog_sending" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_loadbackgroup" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_centerInParent="true">
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/textview_msg" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:text="上传" />
+            <RelativeLayout android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/textview_msg">
+                <ImageView android:id="@id/imageview_load" android:background="@drawable/pic_loadrefresh" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

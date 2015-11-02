@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relativelayout_findmore_title" android:background="#fff9f8f9" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:id="@id/relativelayout_findmore_btnbackindex" android:background="#fff9f8f9" android:layout_width="80.0dip" android:layout_height="48.0dip" android:layout_alignParentLeft="true">
+            <Button android:id="@id/btnBackIndex" android:background="@drawable/bt_back_style" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <ImageView android:id="@id/imageview_findmore_title" android:background="@drawable/pic_findmore_title" android:layout_width="66.0dip" android:layout_height="15.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/relativelayout_findmore_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="48.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/textview_recommend" android:layout_width="60.0dip" android:layout_height="20.0dip" android:text="推荐" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/relativelayout_findmore_recommend" android:background="#ff94d237" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+                <ImageView android:id="@id/imageview_recommend" android:background="@drawable/pic_v4_findmoreapp" android:layout_width="166.0dip" android:layout_height="122.0dip" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/textview_introduction" android:layout_width="60.0dip" android:layout_height="20.0dip" android:text="介绍" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/relativelayout_findmore_introduction" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+                <ImageView android:id="@id/imageview_introduction" android:background="@drawable/pic_findmore_introduction" android:layout_width="165.0dip" android:layout_height="125.0dip" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
